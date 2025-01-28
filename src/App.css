@@ -1,42 +1,200 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+.mcard-view {
+  min-height: 100%;
+  padding: 0;
+  width: 100vw;
+}
+
+.component-wrapper-outer {
+  position: relative;
+}
+
+.component-wrapper-outter .component-wrapper-inner {
   padding: 2rem;
+  background-color: #fbfbfb;
+}
+
+.component-wrapper-outter .component-wrapper-inner.fit {
+  height: 100vh;
+  padding: 0;
+}
+
+.component-wrapper-outter .component-wrapper-inner:not(.fit) {
+  margin: 0 auto;
+}
+
+.component-wrapper-landing {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.component-wrapper-landing .guide {
+  background-color: #fbfbfb;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.component-wrapper-landing .guide .host {
+  font-size: 2rem;
+  margin: 2rem auto 1.5rem;
+  letter-spacing: 0.7rem;
+}
+
+.component-wrapper-landing .guide .host p {
+  display: inline-block;
+}
+
+.component-wrapper-landing .guide .host p:first-child {
+  padding-left: 0.7rem;
+}
+
+.component-wrapper-landing .guide .host .bar {
+  margin: 0 1.25rem 0 0.65rem;
+}
+
+.component-wrapper-landing .guide .host .bar::before {
+  content: "";
+  position: absolute;
+  background-color: #393939;
+  width: 2px;
+  height: 2.1rem;
+  top: 2.1rem;
+}
+
+.component-wrapper-landing .guide .detail-info {
+  margin: 0 auto 1rem;
+  font-size: 0.9rem;
+}
+
+.component-wrapper-landing .guide .detail-info p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.common-header {
+  width: 100%;
+  padding-bottom: 1.8rem;
+
+  .common-header-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+
+  .horizontal-line {
+    height: 1px;
+    background-color: #797979;
+    margin-top: 3px;
+  }
+}
+.greetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.greetings p {
+  font-size: 0.9rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.greetings p:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.host-introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin-bottom: 0.5rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.host-introduction-container p .introduction .parent {
+  font-weight: 500;
 }
 
-.card {
-  padding: 2em;
+.host-introduction-container p .child {
+  font-weight: 700;
 }
 
-.read-the-docs {
-  color: #888;
+.location-trans-wrapper h3 {
+  font-size: 0.9rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.location-trans-wrapper p {
+  font-size: 0.8rem;
+  margin: 0.1rem 0.3rem;
+}
+
+.account-items-wrapper {
+  padding: 0 0.5rem;
+}
+
+.account-item {
+  margin-bottom: 1rem;
+}
+.account-item-text:last-child {
+  border-top: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+
+.account-item-title {
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+  background: #f2eeee;
+  font-size: 0.9rem;
+}
+
+.account-item-text {
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.account-item-text-inner .inner-bank::after {
+  content: "";
+  margin: -1px 8px 0 9px;
+  width: 1px;
+  height: 12px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.account-item-text-inner .inner-name {
+  margin-top: 0.5rem;
+}
+
+.account-item-text-copy button {
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  background-color: #fefefe;
+  padding: 0 0.5rem;
+}
+
+.account-item-text-copy button .copy-icon {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  width: 14px;
 }
