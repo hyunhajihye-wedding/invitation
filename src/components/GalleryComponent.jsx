@@ -25,7 +25,7 @@ const GalleryComponent = () => {
     "14",
     "15",
   ].map((number) => ({
-    src: `/src/assets/imgs/gallery/gallery${number}.jpg`,
+    src: `/imgs/gallery/gallery${number}.jpg`,
   }));
 
   const galleryContainerStyle = {
