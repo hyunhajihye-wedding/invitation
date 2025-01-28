@@ -6,6 +6,7 @@ import CommonHeader from "./CommonHeader";
 import ComponentWrapper from "./ComponentWrapper";
 
 const GalleryComponent = () => {
+  const baseURL = import.meta.env.BASE_URL;
   const [current, setCurrent] = useState(-1);
 
   const imgs = [
@@ -25,7 +26,7 @@ const GalleryComponent = () => {
     "14",
     "15",
   ].map((number) => ({
-    src: `/imgs/gallery/gallery${number}.jpg`,
+    src: `${baseURL}imgs/gallery/gallery${number}.jpg`,
   }));
 
   const galleryContainerStyle = {
