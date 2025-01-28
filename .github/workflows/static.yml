@@ -23,7 +23,7 @@ jobs:
       # 3. .env 파일 생성
       - name: Create .env file
         run: |
-          echo "VITE_APP_NAVERMAPS_CLIENT_ID=${{ secrets.VITE_APP_NAVERMAPS_CLIENT_ID }}" >> .env
+          echo "VITE_APP_NAVERMAPS_CLIENT_ID=${{ vars.VITE_APP_NAVERMAPS_CLIENT_ID }}" >> .env
 
       # 4. 의존성 설치
       - name: Install dependencies
