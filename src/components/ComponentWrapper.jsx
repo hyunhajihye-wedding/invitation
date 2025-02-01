@@ -1,9 +1,17 @@
 import PropTypes from "prop-types";
-import landingImage from "/imgs/landing/landing02.jpg";
+import landingImage1 from "/imgs/landing/landing01.jpg";
+import landingImage2 from "/imgs/landing/landing02.jpg";
+import landingImage3 from "/imgs/landing/landing03.jpg";
 
 const ComponentWrapper = ({ children, landing, fit, footer }) => {
+  const getLandingImage = () => {
+    const variables = [landingImage1, landingImage2, landingImage3];
+    const randomIndex = Math.floor(Math.random() * variables.length);
+
+    return variables[randomIndex];
+  };
   const innerStyle = {
-    backgroundImage: landing ? `url(${landingImage})` : "",
+    backgroundImage: landing ? `url(${getLandingImage()})` : "",
     backgroundColor: footer ? "rgb(242, 242, 242)" : "",
   };
 

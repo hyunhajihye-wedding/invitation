@@ -38,6 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0.85;
 }
 
 .component-wrapper-landing .guide .host {
