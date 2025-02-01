@@ -7,7 +7,7 @@ const AccountCopyComponent = ({ bank, account }) => {
   const onCopyButtonClick = async () => {
     const copyText = `${bank} ${account}`;
     await navigator.clipboard.writeText(copyText);
-    toast.success("복사 되었습니다!!!", {
+    toast.success("계좌번호가 복사 되었습니다.", {
       className: "black-background",
       position: "bottom-center",
       autoClose: 1000,
