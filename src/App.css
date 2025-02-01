@@ -33,7 +33,7 @@
   background-color: #fbfbfb;
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: -1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,6 +127,46 @@
   font-weight: 700;
 }
 
+.location-icons-wrapper {
+  margin: 1.5rem 0;
+}
+
+.location-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.location-icons .location-icon-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  width: 6rem;
+}
+
+.location-icon-wrapper .location-icon {
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 auto 0.5rem;
+  cursor: pointer;
+}
+
+.location-icon.tmap {
+  background-image: url("/imgs/maps/navi_tmap_500x500.png");
+}
+
+.location-icon.naver {
+  background-image: url("/imgs/maps/navi_naver_500x500.png");
+}
+
+.location-icon.kakao {
+  background-image: url("/imgs/maps/navi_kakao_500x500.png");
+}
+
+.location-icon-wrapper .location-label {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 .location-trans-wrapper h3 {
   font-size: 0.9rem;
   margin: 1rem 0 0.5rem;
@@ -197,4 +237,10 @@
   top: 3px;
   margin-right: 10px;
   width: 14px;
+}
+
+.footer-wrapper {
+}
+
+.footer-wrapper .closing {
 }

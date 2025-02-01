@@ -4,6 +4,7 @@ import CalendarComponent from "./CalendarComponent";
 import GalleryComponent from "./GalleryComponent";
 import MapComponent from "./MapComponent";
 import AccountComponent from "./AccountComponent";
+import FooterComponent from "./FooterComponent";
 
 function MobileInvitation() {
   return (
@@ -14,6 +15,7 @@ function MobileInvitation() {
       <GalleryComponent />
       <MapComponent />
       <AccountComponent />
+      <FooterComponent />
     </div>
   );
 }

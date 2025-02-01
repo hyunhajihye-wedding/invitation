@@ -9,7 +9,7 @@ const AccountCopyComponent = ({ bank, account }) => {
     await navigator.clipboard.writeText(copyText);
     toast.success("복사 되었습니다!!!", {
       className: "black-background",
-      position: "top-center",
+      position: "bottom-center",
       autoClose: 1000,
       closeButton: false,
       hideProgressBar: true,

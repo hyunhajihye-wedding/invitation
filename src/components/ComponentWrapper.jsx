@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
-import landingImage from "../assets/imgs/AWS00002.jpg";
+import landingImage from "/imgs/landing/landing02.jpg";
 
-const ComponentWrapper = ({ children, landing, fit }) => {
+const ComponentWrapper = ({ children, landing, fit, footer }) => {
   const innerStyle = {
     backgroundImage: landing ? `url(${landingImage})` : "",
+    backgroundColor: footer ? "rgb(242, 242, 242)" : "",
   };
 
   return (
@@ -24,11 +25,13 @@ ComponentWrapper.propTypes = {
   children: PropTypes.element.isRequired,
   landing: PropTypes.bool,
   fit: PropTypes.bool,
+  footer: PropTypes.bool,
 };
 
 ComponentWrapper.defaultProps = {
   landing: false,
   fit: false,
+  footer: false,
 };
 
 export default ComponentWrapper;
