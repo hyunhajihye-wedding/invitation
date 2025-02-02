@@ -4,6 +4,7 @@ import useKakaoShare from "./useKakaoShare";
 
 const FooterComponent = () => {
   const kakao = useKakaoShare();
+
   const onShareKakaoClick = () => {
     kakao.Share.sendDefault({
       objectType: "feed",
