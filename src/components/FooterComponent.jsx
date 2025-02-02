@@ -11,29 +11,16 @@ const FooterComponent = () => {
       content: {
         title: "딸기 치즈 케익",
         description: "#케익 #딸기 #삼평동 #카페 #분위기 #소개팅",
-        imageUrl:
-          "http://k.kakaocdn.net/dㅡn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png",
+        imageUrl: "/imgs/landing01.jpg",
         link: {
           // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
           mobileWebUrl: "https://hyunhajihye-wedding.github.io",
           webUrl: "https://hyunhajihye-wedding.github.io",
         },
       },
-      social: {
-        likeCount: 286,
-        commentCount: 45,
-        sharedCount: 845,
-      },
       buttons: [
         {
-          title: "웹으로 보기",
-          link: {
-            mobileWebUrl: "https://hyunhajihye-wedding.github.io",
-            webUrl: "https://hyunhajihye-wedding.github.io/invitation",
-          },
-        },
-        {
-          title: "앱으로 보기",
+          title: "모바일 청첩장 보기",
           link: {
             mobileWebUrl: "https://hyunhajihye-wedding.github.io/invitation",
             webUrl: "https://hyunhajihye-wedding.github.io/invitation",
