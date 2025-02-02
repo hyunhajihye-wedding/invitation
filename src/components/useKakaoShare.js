@@ -9,10 +9,6 @@ const useKakaoShare = () => {
 
   const KAKAO_SDK_SRC = `https://t1.kakaocdn.net/kakao_js_sdk/${KAKAO_SDK_VERSION}/kakao.min.js`;
 
-  console.log(KAKAO_CLIENT_ID);
-  console.log(KAKAO_INTEGRITY_VALUE);
-  console.log(KAKAO_SDK_VERSION);
-  console.log(kakaoSDK);
   useEffect(() => {
     const kakaoSDKURL = `${KAKAO_SDK_SRC}`;
     let script = document.querySelector(`script[src="${kakaoSDKURL}"]`);
