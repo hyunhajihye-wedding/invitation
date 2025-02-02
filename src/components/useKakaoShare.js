@@ -33,6 +33,12 @@ const useKakaoShare = () => {
       setKakaoSDK(window.Kakao);
     };
     script.addEventListener("load", loadHandler);
+    return () => {
+      if (script) {
+        script.removeEventListener("load", loadHandler);
+        document.head.removeChild(script);
+      }
+    };
   }, [kakaoSDK]);
 
   return kakaoSDK;
