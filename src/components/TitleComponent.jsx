@@ -5,9 +5,9 @@ const TitleComponent = () => {
     <ComponentWrapper landing fit>
       <div className="guide">
         <div className="host">
-          <p>류지혜</p>
-          <p className="bar"></p>
           <p>전현하</p>
+          <p className="bar"></p>
+          <p>류지혜</p>
         </div>
         <div className="detail-info">
           <p>2025년 5월 18일 일요일 낮 3시 40분</p>
