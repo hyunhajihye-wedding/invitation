@@ -185,7 +185,7 @@
 .account-item {
   margin-bottom: 1rem;
 }
-.account-item-text:last-child {
+.account-item-text {
   border-top: 0.1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -240,8 +240,29 @@
   width: 14px;
 }
 
+.account-item-text-copy button .copy-label {
+  /* font-size: 0.7rem; */
+}
+
 .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-wrapper .share-kakao {
+  font-size: 0.6rem;
+  display: flex;
+  vertical-align: middle;
+}
+
+.footer-wrapper .share-kakao span {
+  line-height: 26px;
+  text-align: center;
+  margin-right: 0.2rem;
 }
 
 .footer-wrapper .closing {
+  font-size: 0.6rem;
+  text-align: end;
 }

@@ -13,6 +13,7 @@ const ComponentWrapper = ({ children, landing, fit, footer }) => {
   const innerStyle = {
     backgroundImage: landing ? `url(${getLandingImage()})` : "",
     backgroundColor: footer ? "rgb(242, 242, 242)" : "",
+    padding: footer ? "0.3rem" : undefined,
   };
 
   return (

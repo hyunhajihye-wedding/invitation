@@ -21,7 +21,7 @@ const AccountCopyComponent = ({ bank, account }) => {
       <span className="copy-icon">
         <Copy style={{ width: "1rem" }} />
       </span>
-      <span>계좌번호 복사</span>
+      <span className="copy-label">복사</span>
       <ToastContainer />
     </button>
   );

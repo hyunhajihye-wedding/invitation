@@ -22,3 +22,8 @@ div.rdp-root {
   --rdp-accent-background-color: #f0768b; /* Change the accent background color. */
   /* Add more CSS variables here. */
 }
+
+.rdp-selected .rdp-day_button {
+  background-color: var(--rdp-accent-color);
+  color: #fbfbfb;
+}
