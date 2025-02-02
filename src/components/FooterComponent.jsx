@@ -16,8 +16,8 @@ const FooterComponent = () => {
           "https://hyunhajihye-wedding.github.io/invitation/imgs/landing/landing02.jpg",
         link: {
           // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-          mobileWebUrl: "https://hyunhajihye-wedding.github.io",
-          webUrl: "https://hyunhajihye-wedding.github.io",
+          mobileWebUrl: "https://hyunhajihye-wedding.github.io/invitation",
+          webUrl: "https://hyunhajihye-wedding.github.io/invitation",
         },
       },
       buttons: [
