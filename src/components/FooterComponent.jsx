@@ -9,9 +9,10 @@ const FooterComponent = () => {
     kakao.Share.sendDefault({
       objectType: "feed",
       content: {
-        title: "딸기 치즈 케익",
-        description: "#케익 #딸기 #삼평동 #카페 #분위기 #소개팅",
-        imageUrl: "/imgs/landing01.jpg",
+        title: "전현하 🩷 류지혜, 결혼합니다!",
+        description:
+          "2025년 5월 18일 15시 40분 신도림 라마다 웨딩 14층 하늘정원홀",
+        imageUrl: "/imgs/landing/landing01.jpg",
         link: {
           // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
           mobileWebUrl: "https://hyunhajihye-wedding.github.io",
