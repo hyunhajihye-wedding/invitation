@@ -11,7 +11,7 @@ const FooterComponent = () => {
       content: {
         title: "전현하 🩷 류지혜, 결혼합니다!",
         description:
-          "2025년 5월 18일 15시 40분 신도림 라마다 웨딩 14층 하늘정원홀",
+          "2025년 5월 18일 일요일 낮 3시 40분 신도림 라마다 웨딩 14층 하늘정원홀",
         imageUrl:
           "https://hyunhajihye-wedding.github.io/invitation/imgs/landing/landing02.jpg",
         link: {
